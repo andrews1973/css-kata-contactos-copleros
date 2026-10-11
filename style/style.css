@@ -1,44 +1,72 @@
-body {
-    background-color: #5b9eed;
-}
-#copleros{
-    margin-top: 40px;
-    max-width: 300px;
-    background-color: white;
-    padding: 0 10px;
-    margin: 40px auto 0 auto;
+
+/* 1. Ajustes generales */
+* {
+    box-sizing: border-box;
 }
 
+body {
+    margin: 0;
+    background-color: #5b9eed;
+    font-family: Arial, sans-serif;
+}
+
+/* 2. Centrar la tarjeta */
+main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* 3. Tarjeta blanca */
+#copleros {
+    width: 100%;
+    max-width: 320px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 0 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+}
+
+/* 4. Lista */
 #copleros ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
+/* 5. Cada coplero */
 #copleros ul li {
-   border-bottom: 1px solid rgb(234, 234, 234);
-   padding: 15px;
-   display: flex;
-   align-items: center;
-
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 5px;
+    border-bottom: 1px solid #eaeaea;
 }
 
 #copleros ul li:last-child {
-    border: none;
+    border-bottom: none;
 }
 
+/* 6. Imagen */
+#copleros ul li img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+/* 7. Texto */
 #copleros ul li span {
-    color: #aaaaaa
+    color: #aaa;
+    font-size: 14px;
 }
 
 #copleros ul li strong {
     display: block;
     color: #556494;
-}
-
-#copleros ul li img {
-   width: 60px;
-   height: 60px;
-   border-radius: 50%; 
-   margin-right: 15px;
+    font-size: 16px;
+    margin-bottom: 4px;
 }
