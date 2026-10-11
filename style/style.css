@@ -1,0 +1,44 @@
+body {
+    background-color: #5b9eed;
+}
+#copleros{
+    margin-top: 40px;
+    max-width: 300px;
+    background-color: white;
+    padding: 0 10px;
+    margin: 40px auto 0 auto;
+}
+
+#copleros ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#copleros ul li {
+   border-bottom: 1px solid rgb(234, 234, 234);
+   padding: 15px;
+   display: flex;
+   align-items: center;
+
+}
+
+#copleros ul li:last-child {
+    border: none;
+}
+
+#copleros ul li span {
+    color: #aaaaaa
+}
+
+#copleros ul li strong {
+    display: block;
+    color: #556494;
+}
+
+#copleros ul li img {
+   width: 60px;
+   height: 60px;
+   border-radius: 50%; 
+   margin-right: 15px;
+}
